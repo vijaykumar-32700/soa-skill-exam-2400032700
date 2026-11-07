@@ -23,7 +23,7 @@ FROM eclipse-temurin:21-jre-jammy
 
 WORKDIR /app
 
-EXPOSE 2026
+EXPOSE 2700
 
 # Copy generated JAR file
 COPY --from=build /app/target/*.jar app.jar

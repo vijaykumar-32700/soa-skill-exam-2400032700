@@ -40,11 +40,6 @@ services:
     ports:
       - "2700:2026"
 
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresdb:5432/soa-skill-exam-2400032700
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: exam123
-
     depends_on:
       postgresdb:
         condition: service_healthy
